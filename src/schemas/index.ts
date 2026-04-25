@@ -1,0 +1,1 @@
+export { registerSchema, loginSchema } from "./authSchema.ts";

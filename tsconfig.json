@@ -30,7 +30,22 @@
     "paths": {
       "#*": [
         "./src/*"
-      ]
+      ],
+      /* "#db": [
+        "./src/db/index.ts"
+      ],
+      "#models": [
+        "./src/models/index.ts"
+      ],
+      "#routes": [
+        "./src/routes/index.ts"
+      ],
+      "#controllers": [
+        "./src/controllers/index.ts"
+      ],
+      "#schemas": [
+        "./src/schemas/index.ts"
+      ] */
     }
   },
   "include": [
