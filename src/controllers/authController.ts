@@ -38,7 +38,7 @@ export const login = async (req: Request, res: Response) => {
     }
     const token = jwt.sign(
         {
-            userId: user._id.toString,
+            userId: user._id.toString(),
             email: user.email
         },
         process.env.JWT_SECRET as string,
@@ -51,3 +51,11 @@ export const login = async (req: Request, res: Response) => {
         token,
     });
 };
+
+export const me = async (req: Request, res: Response) => {
+    return res.status(200).json({
+        message: "Protected route works",
+        user: req.user,
+    });
+};
+
